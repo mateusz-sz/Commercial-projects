@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Biuro rachunkowe legnica. Księgowość, kadry i płace, zakładanie firmy.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+    <title>Biuro Rachunkowe</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Mitr:400,600|Righteous|Overlock:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="responsiveslides.css">
+    <link rel="stylesheet" href="css/icon-set/styles.css">
+    <link rel="shortcut icon" href="img/favicon-sm.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/scrollowanie.js"></script>
+    <script src="responsiveslides.js"></script>
+    <script src="js/sticky-menu.js"></script>
+    <script src="js/image-art-fix.js"></script>
+    <script>
+        $(function () {
+            $("#slider1").responsiveSlides({
+                maxwidth: 1663
+                , speed: 1200
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="dark-background"></div>
+    <div class="container">
+        <!--LOGO-->
+        <h1 id="logo" class="col-xs-6">
+            <img class="img-responsive" src="img/logo2.png" alt="" width="400">
+        </h1>
+        <!--INFORMACJE KONTAKTOWE-->
+        <div id="header-kontakt-info" class="col-xs-6"> e-mail: sample@email.com
+            <br> Tel. 123 456 789
+            <br> ul. Fiołkowa 15</div>
+    </div>
+    <nav class="navbar navbar-static-top nav-menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ToggleNavbar" aria-expanded="false"> <span class="sr-only">Toggle menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="ToggleNavbar">
+                <div class="container">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><span id="nasze-atuty" class="nav-elem">Nasze atuty</span></li>
+                        <li><span id="zakres-uslug" class="nav-elem">Zakres usług</span></li>
+                        <li><span id="kontakt" class="nav-elem">Kontakt</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- FULL WIDTH SLIDER -->
+    <ul class="rslides" id="slider1">
+        <li><img src="img/slider/slider-image-1.png" alt=""></li>
+        <li><img src="img/slider/slider-image-2.png" alt=""></li>
+    </ul>
+    <!--===============================================NASZE ATUTY====================================================================-->
+    <div class="container">
+        <h2 id="atuty-headnig">nasze atuty</h2>
+        <div class="col-lg-4 col-md-4 col-xs-12 collumn-wrapper slide-left">
+            <div class="collumn">
+                <div class="image-art"> <span class="icon-check"></span></div>
+                <h3 style="line-height:200%">Doświadczenie</h3>
+                <p>Od 11 lat zajmujemy się księgowością oraz sprawami kadrowo-płacowymi. Na bieżąco podnosimy swoje kwalifikacje biorąc udział w szkoleniach.  Powierz swoją firmę w ręce odpowiednich ludzi!</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 collumn-wrapper slide-left">
+            <div class="collumn">
+                <div class="image-art"><span class="icon-truck"></span></div>
+                <h3>Odbieramy dokumenty</h3>
+                <p>Nie musisz się martwić o to czy zdążysz przywieźć swoje dokumenty do naszego biura!
+                    <br>To my przyjedziemy po nie do Ciebie!</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 collumn-wrapper slide-left">
+            <div class="collumn">
+                <div class="image-art"><span class="icon-man-thinking"></span></div>
+                <h3>Wyjaśnimy!</h3>
+                <p>Jeśli nie jesteś specjalistą w&nbsp;systemach podatkowych, rachunkowości itp., <strong>pomożemy Ci w&nbsp;zrozumieniu wszystkich zasad i&nbsp;przepisów.</strong> </p>
+            </div>
+        </div>
+    </div>
+    <div class="client-call">
+        <h1 id="ask">Masz problem? Napisz, zadzwonimy!</h1>
+        <h4 id="ask-2">Często kilka minut rozmowy może zaoszczędzić godziny szukania informacji</h4>
+        <form method="post" action="contact.php">
+            <input name="name" type="text" placeholder="Imię i Nazwisko" required maxlength="50"><br>
+            <input name="numer" type="tel" placeholder="Nr telefonu" required maxlength="12"><br>
+            <textarea name="message" id="" placeholder="Napisz tutaj, o co chciałbyś zapytać..."></textarea><br>
+            <input id="submit" type="submit" name="submit" value="Wyślij">
+        </form>
+    </div>
+    <!--===============================================ZAKRES USLUG====================================================================-->
+    <div class="container">
+        <h2 id="uslugi-heading">Zakres usług</h2>
+        <div class="col-lg-4 col-md-4 col-xs-12 collumn-wrapper slide-right">
+            <div class="collumn">
+                <div class="image-art"> <span class="icon-book"></span> </div>
+                <h3 class="double-high">Pełna Księgowość </h3>
+                <p> Nasze usługi księgowe dopasowujemy indywidualnie do Państwa potrzeb. Klientom zapewniamy fachową i rzetelną pomoc włącznie z <strong>odbiorem dokumentów oraz poufnością danych.</strong> </p> <span id="ksiegowosc-link" class="read-more">Czytaj więcej</span> </div>
+        </div>
+        <div id="ksiegowosc-text" class="read-more-div">
+            <div class="read-more-top-bar"> <span class="icon-cancel"></span> </div>
+            <h3>Zakres naszych usług księgowych:</h3>
+            <ul>
+                <li>podatkowa księga przychodów i rozchodów</li>
+                <li>ryczałt ewidencjonowany</li>
+                <li>karta podatkowa</li>
+                <li>prowadzenie ewidencji środków trwałych</li>
+                <li>ewidencja rejestrów dla celów rozliczenia podatku od towarów i usług Vat</li>
+                <li>roczne zeznania podatkowe</li>
+                <li>sporządzanie i składanie miesięcznych lub kwartalnych deklaracji podatkowych</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 collumn-wrapper slide-right">
+            <div class="collumn">
+                <div class="image-art"> <span class="icon-money"></span> </div>
+                <h3 class="double-high">Kadry i płace</h3>
+                <p> Proponujemy kompleksową obsługę kadrowo-płacową. Przygotowujemy dokumenty związane z rozpoczęciem pracy, a także pilnujemy terminowości umów, badań lekarskich i szkoleń BHP. </p> <span id="kadry-link" class="read-more">Czytaj więcej</span> </div>
+        </div>
+        <div id="kadry-text" class="read-more-div">
+            <div class="read-more-top-bar"> <span class="icon-cancel"></span> </div>
+            <h3>Oferta - kadry i płace:</h3>
+            <ul>
+                <li>prowadzenie akt osobowych</li>
+                <li>sporządzanie umów o pracę, cywilnoprawnych oraz świadectw pracy</li>
+                <li>sporządzanie i wysyłka dokumentów zgłoszeniowych i rozliczeniowych do ZUS</li>
+                <li>prowadzenie ewidencji czasu pracy</li>
+                <li>sporządzanie listy płac</li>
+                <li>przygotowywanie zaświadczeń o zatrudnieniu i wynagrodzeniu</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 collumn-wrapper slide-right">
+            <div class="collumn">
+                <div class="image-art"> <span class="icon-plus"></span> </div>
+                <h3 class="double-high">Oferujemy też</h3>
+                <p> Poza księgowością oraz kadrami oferujemy także inne usługi. Kliknij link poniżej i przeczytaj o pozostałych usługach naszego biura.</p> <span id="inne-link" class="read-more">Czytaj więcej</span> </div>
+        </div>
+        <div id="inne-text" class="read-more-div">
+            <div class="read-more-top-bar"> <span class="icon-cancel"></span> </div>
+            <h3>Inne usługi:</h3>
+            <ul>
+                <li>pomoc przy dokonywaniu formalności związanych z rejestracją firmy</li>
+                <li>wystawianie faktur i rachunków</li>
+                <li>sporządzanie wezwań do zapłaty</li>
+                <li>pomoc w sporządzaniu pozwów do sądu</li>
+                <li>sporządzanie wniosków o zezwolenie na pracę oraz zezwolenie na pobyt czasowy cudzoziemców</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h3 style="font-size:33px">Biuro Rachunkowe
+                    <br> <span style="font-size:20px">A.Laskiewicz i W.Niemiec</span>
+                </h3>
+                <ul class="contact-info">
+                    <li>tel. 123 456 789</li>
+                    <li>e-mail: sample@email.com</li>
+                    <li style="border: none">ul. Fiołkowa 30</li>
+                </ul>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-6 google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10019.504730202165!2d17.0246092443502!3d51.11074459468189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA2JzM4LjYiTiAxN8KwMDInMDAuMSJF!5e0!3m2!1spl!2spl!4v1524864982178" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div> <span id="where-we-are">Jak do nas dojechać</span> </div>
+    </footer>
+    <div id="up-button"> </div>
+</body>
+
+</html>
