@@ -1,0 +1,431 @@
+@font-face {
+  font-family: 'Dashed_line';
+  src: url('../Fonts/fonts/JandaSparkleandShine.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px;
+}
+body {
+  background: url(../images/home/background-dots.png) top center;
+  background-attachment: fixed;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden;
+}
+.icon-bar {
+  background-color: #000;
+}
+.blue-bcg {
+  background-color: #1d365d;
+  color: #eee;
+  opacity: 1;
+  box-shadow: 0 0 15px #222;
+}
+.article-home {
+  padding: 90px 40px;
+}
+.article-home img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  text-align: center;
+}
+@media only screen and (max-width: 487px) {
+  .article-home {
+    padding: 90px 15px;
+  }
+}
+.article-header {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+footer {
+  padding: 50px 0 0 0;
+  z-index: 5;
+  margin-top: 20px;
+}
+footer h3 {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h3#contact_us {
+  font-size: 50px;
+}
+div.contact-info {
+  margin-top: 60px;
+}
+div.contact-info input,
+div.contact-info textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  outline: none;
+  border-radius: 3px;
+  resize: none;
+  color: #111;
+  background-color: #efefef;
+  border: 1px solid #dedede;
+  transition: 0.4s background-color;
+}
+div.contact-info input[type=text]:hover,
+div.contact-info textarea:hover {
+  background-color: #cdcdcd;
+}
+div.contact-info input[type=text]:focus,
+div.contact-info textarea:focus {
+  border: 3px solid #769aff;
+  padding: 8px;
+}
+div.contact-info input[type=submit] {
+  width: 45%;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: 0.2s color;
+  transition: 0.2s background-color;
+}
+div.contact-info input[type=submit]:hover {
+  background-color: #769aff;
+  color: #fff;
+}
+@media only screen and (max-width: 1007px) {
+  div.contact-info input[type=text],
+  div.contact-info textarea {
+    width: 100%;
+  }
+}
+bdi#credits {
+  display: block;
+  margin: 0 20px;
+  padding: 15px;
+  background-color: #ddd;
+  width: 100%;
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+  font-size: 16px;
+}
+.logotyp {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 44px !important;
+  color: #efe;
+  letter-spacing: 2px;
+  transition: 0.3s color;
+  padding: 0;
+}
+.logotyp:hover {
+  color: #769aff;
+}
+img#logo {
+  max-height: 45px;
+  margin: 0;
+}
+nav#mine {
+  margin-bottom: 0;
+  background-color: #1d365d;
+  padding: 10px 0;
+}
+.nav-wrapper {
+  background-color: #1d365d;
+}
+.google-maps {
+  position: relative;
+  height: 0;
+  padding-bottom: 68%;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+ul.footer-info {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+ul.footer-info li {
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+}
+ul.footer-info li:first-child {
+  margin-right: 40px;
+}
+ul.footer-info::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a#coaching {
+  background-color: #769aff;
+  border-radius: 29px;
+  transition: 0.4s background-color;
+}
+a#coaching:hover {
+  background-color: #1d365d;
+}
+.nav-elem {
+  color: #efe;
+  transition: 0.3s color;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+}
+.nav-elem:hover {
+  color: #769aff;
+  background-color: #1d365d !important;
+  cursor: pointer;
+}
+.nav-elem:active {
+  background-color: #1d365d !important;
+}
+@media only screen and (max-width: 1007px) {
+  .center-image {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wide {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1007px) {
+  .narrow {
+    display: none;
+  }
+}
+/* 
+============================================================================================================================================
+//                                                                                                                                        //
+//                                                                                                                                        //
+//                                                            OFERTA SECTION                                                              //
+//                                                                                                                                        //
+//                                                                                                                                        //
+============================================================================================================================================
+*/
+div.courses-wrapper {
+  padding: 30px 0 40px 0;
+  margin-bottom: 90px;
+}
+div.courses {
+  display: inline-block;
+}
+div.center-text {
+  width: 35%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -70px;
+  text-align: center;
+  opacity: 0;
+  transition: all 1400ms ease-out;
+  transition-delay: 190ms;
+}
+div.center-text.animate {
+  opacity: 1;
+}
+div#course-ul {
+  position: relative;
+  width: 31%;
+  padding-top: 31%;
+  border-radius: 50%;
+  background-image: url("../images/courses/certyfikaty2.jpg");
+  background-size: contain;
+  background-position: center;
+  opacity: 0;
+  transition: all 880ms ease-out;
+  transition-delay: 160ms;
+  transform: translate3d(19%, 210px, 0);
+}
+div#course-ul.animate {
+  opacity: 1;
+  transform: translate3d(1%, 50px, 0);
+}
+div#course-ur {
+  position: relative;
+  width: 32%;
+  padding-top: 32%;
+  border-radius: 50%;
+  background-image: url("../images/courses/buisness.jpg");
+  background-size: contain;
+  background-position: center;
+  opacity: 0;
+  transition: all 790ms ease-out;
+  transition-delay: 230ms;
+  transform: translate3d(-20%, 180px, 0);
+}
+div#course-ur.animate {
+  opacity: 1;
+  transform: translate3d(92%, 10px, 0);
+}
+div#course-dl {
+  position: relative;
+  width: 32%;
+  padding-top: 32%;
+  border-radius: 50%;
+  background-image: url("../images/courses/konwersacje.jpg");
+  background-size: contain;
+  background-position: center;
+  opacity: 0;
+  transition: all 1000ms ease-out;
+  transition-delay: 250ms;
+  transform: translate3d(50%, -260px, 0);
+}
+div#course-dl.animate {
+  opacity: 1;
+  transform: translate3d(22%, 0, 0);
+}
+div#course-dr {
+  position: relative;
+  width: 32%;
+  padding-top: 32%;
+  border-radius: 50%;
+  background-image: url("../images/courses/matura.jpg");
+  background-size: contain;
+  background-position: center;
+  opacity: 0;
+  transition: all 750ms ease-out;
+  transition-delay: 360ms;
+  transform: translate3d(-28%, -230px, 0);
+}
+div#course-dr.animate {
+  opacity: 1;
+  transform: translate3d(115%, -50px, 0);
+}
+.circle-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(29, 54, 93, 0.8);
+  color: #fff;
+  opacity: 0;
+  border-radius: 50%;
+  padding: 12%;
+  text-align: center;
+  transition: all 400ms ease-in;
+}
+.circle-info h3 {
+  font-size: 50px;
+  display: none;
+}
+.circle-info p {
+  font-size: 20px;
+  display: none;
+}
+.circle-info:hover {
+  opacity: 1;
+}
+h2#materials-heading {
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  font-size: 52px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+div.materials-description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.materials-description h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+div.materials-description ul {
+  list-style-type: square;
+}
+div#books-mess > img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -100px;
+  z-index: 2;
+  width: 100%;
+  max-height: 600px;
+}
+.separating-line {
+  text-align: center;
+  margin: 50px 0;
+}
+.review:last-child {
+  margin-bottom: 100px;
+}
+.parallax-bcg {
+  padding: 150px 0;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.bcg {
+  background-image: url('../images/bookshelves-parallax.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 145%;
+  top: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+.parallax-content-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+  z-index: 2;
+}
+.parallax-content-wrapper p {
+  font-size: 20px;
+}
+.courses-materials > li {
+  font-size: 20px;
+  line-height: 160%;
+}
+.parallax-heading-bcg {
+  position: relative;
+  min-height: 730px;
+  background: url("../images/parallax-heading/background-blur.png");
+  background-size: auto;
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-color: darkred;
+}
+.parallax-brand-name {
+  position: absolute;
+  top: 50%;
+  margin-top: -65px;
+  height: 120px;
+  width: 100%;
+  margin-left: -280px;
+  background: url("../images/parallax-heading/Horizons-logo-na-strone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax-big-ben {
+  width: 960px;
+  height: 938px;
+  background: url("../images/parallax-heading/big-ben.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 90px;
+}
+.sun {
+  background: url('');
+}
